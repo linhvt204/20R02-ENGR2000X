@@ -1,0 +1,17 @@
+# encoding: utf-8
+# 2019 R3
+SetScriptVersion(Version="19.5.112")
+system1 = GetSystem(Name="SYS")
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.Edit(IsSpaceClaimGeometry=True)
+geometry1.Exit()
+Refresh()
+geometry1.Edit(IsSpaceClaimGeometry=True)
+Save(Overwrite=True)
+geometry1.Exit()
+Refresh()
+modelComponent1 = system1.GetComponent(Name="Model")
+modelComponent1.Refresh()
+modelComponent1.Refresh()
+Save(Overwrite=True)
+Open(FilePath="E:/EdX Courses/ENGR2000X/2D_conduction/2d_conduction.wbpj")

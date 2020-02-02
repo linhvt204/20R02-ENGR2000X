@@ -73,13 +73,13 @@
        2 PARALLEL PROCESSES REQUESTED WITH SINGLE THREAD PER PROCESS
     TOTAL OF     2 CORES REQUESTED
   DESIGNXPLORER REQUESTED
-  INPUT FILE NAME              = E:\vu.t.linh204.work GD\Lop Anh Tuan\EdX Courses\ENGR2000X\20P01 - 2D_Conduction\_ProjectScratch\Scr224B\dummy.dat
-  OUTPUT FILE NAME             = E:\vu.t.linh204.work GD\Lop Anh Tuan\EdX Courses\ENGR2000X\20P01 - 2D_Conduction\_ProjectScratch\Scr224B\solve.out
+  INPUT FILE NAME              = E:\vu.t.linh204.work GD\Lop Anh Tuan\EdX Courses\ENGR2000X\20P01 - 2D_Conduction\_ProjectScratch\Scr4C4C\dummy.dat
+  OUTPUT FILE NAME             = E:\vu.t.linh204.work GD\Lop Anh Tuan\EdX Courses\ENGR2000X\20P01 - 2D_Conduction\_ProjectScratch\Scr4C4C\solve.out
   START-UP FILE MODE           = NOREAD
   STOP FILE MODE               = NOREAD
 
  RELEASE= 2019 R3              BUILD= 19.5      UP20190805   VERSION=WINDOWS x64 
- CURRENT JOBNAME=file0  22:11:30  FEB 01, 2020 CP=      0.453
+ CURRENT JOBNAME=file0  22:53:41  FEB 01, 2020 CP=      0.344
 
 
  PARAMETER _DS_PROGRESS =     999.0000000    
@@ -88,11 +88,11 @@
 
 
 
- *** NOTE ***                            CP =       0.719   TIME= 22:11:30
+ *** NOTE ***                            CP =       0.531   TIME= 22:53:41
  The /CONFIG,NOELDB command is not valid in a Distributed ANSYS          
  solution.  Command is ignored.                                          
 
- *GET  _WALLSTRT  FROM  ACTI  ITEM=TIME WALL  VALUE=  22.1916667    
+ *GET  _WALLSTRT  FROM  ACTI  ITEM=TIME WALL  VALUE=  22.8947222    
 
  TITLE= 
  2D_conduction--Steady-State Thermal (B5)                                      
@@ -101,7 +101,7 @@
  SET PARAMETER DIMENSIONS ON  _WB_PROJECTSCRATCH_DIR
   TYPE=STRI  DIMENSIONS=      248        1        1
 
- PARAMETER _WB_PROJECTSCRATCH_DIR(1) = E:\vu.t.linh204.work GD\Lop Anh Tuan\EdX Courses\ENGR2000X\20P01 - 2D_Conduction\_ProjectScratch\Scr224B\
+ PARAMETER _WB_PROJECTSCRATCH_DIR(1) = E:\vu.t.linh204.work GD\Lop Anh Tuan\EdX Courses\ENGR2000X\20P01 - 2D_Conduction\_ProjectScratch\Scr4C4C\
 
  SET PARAMETER DIMENSIONS ON  _WB_SOLVERFILES_DIR
   TYPE=STRI  DIMENSIONS=      248        1        1
@@ -139,7 +139,7 @@
  *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2019 R3          19.5     ***
  DISTRIBUTED ANSYS Academic Teaching Introductory              
 
- 01055371  VERSION=WINDOWS x64   22:11:30  FEB 01, 2020 CP=      0.734
+ 01055371  VERSION=WINDOWS x64   22:53:41  FEB 01, 2020 CP=      0.531
 
  2D_conduction--Steady-State Thermal (B5)                                      
 
@@ -156,18 +156,18 @@
  ***************** Define Uniform Initial temperature ***************
 
 
- ***** ROUTINE COMPLETED *****  CP =         0.844
+ ***** ROUTINE COMPLETED *****  CP =         0.641
 
 
- --- Number of total nodes = 433
- --- Number of contact elements = 16
+ --- Number of total nodes = 73
+ --- Number of contact elements = 6
  --- Number of spring elements = 0
  --- Number of bearing elements = 0
- --- Number of solid elements = 128
+ --- Number of solid elements = 18
  --- Number of condensed parts = 0
- --- Number of total elements = 144
+ --- Number of total elements = 24
 
- *GET  _WALLBSOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  22.1916667    
+ *GET  _WALLBSOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  22.8947222    
  ****************************************************************************
  *************************    SOLUTION       ********************************
  ****************************************************************************
@@ -194,27 +194,27 @@
  SELECT       FOR ITEM=TYPE COMPONENT=    
   IN RANGE         2 TO          2 STEP          1
 
-         16  ELEMENTS (OF        144  DEFINED) SELECTED BY  ESEL  COMMAND.
+          6  ELEMENTS (OF         24  DEFINED) SELECTED BY  ESEL  COMMAND.
 
  SELECT      ALL NODES HAVING ANY ELEMENT IN ELEMENT SET.
 
-         33 NODES (OF        433  DEFINED) SELECTED FROM
-       16 SELECTED ELEMENTS BY NSLE COMMAND.
+         13 NODES (OF         73  DEFINED) SELECTED FROM
+        6 SELECTED ELEMENTS BY NSLE COMMAND.
 
  GENERATE SURFACE LOAD CONV ON SURFACE DEFINED BY ALL SELECTED NODES
  VALUES=  5.00000000      0.00000000    
 
- NUMBER OF CONV ELEMENT FACE LOADS STORED =         16
+ NUMBER OF CONV ELEMENT FACE LOADS STORED =          6
 
  ALL SELECT   FOR ITEM=NODE COMPONENT=    
-  IN RANGE         1 TO        433 STEP          1
+  IN RANGE         1 TO         73 STEP          1
 
-        433  NODES (OF        433  DEFINED) SELECTED BY NSEL  COMMAND.
+         73  NODES (OF         73  DEFINED) SELECTED BY NSEL  COMMAND.
 
  ALL SELECT   FOR ITEM=ELEM COMPONENT=    
-  IN RANGE         1 TO        144 STEP          1
+  IN RANGE         1 TO         24 STEP          1
 
-        144  ELEMENTS (OF        144  DEFINED) SELECTED BY  ESEL  COMMAND.
+         24  ELEMENTS (OF         24  DEFINED) SELECTED BY  ESEL  COMMAND.
 
  USE AUTOMATIC TIME STEPPING THIS LOAD STEP
 
@@ -265,27 +265,27 @@
 
  *ENDIF
 
- *** NOTE ***                            CP =       0.953   TIME= 22:11:30
+ *** NOTE ***                            CP =       0.750   TIME= 22:53:41
  The automatic domain decomposition logic has selected the MESH domain   
  decomposition method with 2 processes per solution.                     
 
  *****  ANSYS SOLVE    COMMAND  *****
 
- *** WARNING ***                         CP =       0.953   TIME= 22:11:30
+ *** WARNING ***                         CP =       0.750   TIME= 22:53:41
  Element shape checking is currently inactive.  Issue SHPP,ON or         
  SHPP,WARN to reactivate, if desired.                                    
 
- *** NOTE ***                            CP =       0.953   TIME= 22:11:30
+ *** NOTE ***                            CP =       0.781   TIME= 22:53:41
  The model data was checked and warning messages were found.             
   Please review output or errors file ( E:\vu.t.linh204.work GD\Lop Anh  
  Tuan\EdX Courses\ENGR2000X\20P01 -                                      
- 2D_Conduction\_ProjectScratch\Scr224B\file0.err ) for these warning     
+ 2D_Conduction\_ProjectScratch\Scr4C4C\file0.err ) for these warning     
  messages.                                                               
 
  *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2019 R3          19.5     ***
  DISTRIBUTED ANSYS Academic Teaching Introductory              
 
- 01055371  VERSION=WINDOWS x64   22:11:30  FEB 01, 2020 CP=      0.953
+ 01055371  VERSION=WINDOWS x64   22:53:41  FEB 01, 2020 CP=      0.781
 
  2D_conduction--Steady-State Thermal (B5)                                      
 
@@ -299,19 +299,19 @@
    OFFSET TEMPERATURE FROM ABSOLUTE ZERO . . . . .  273.15    
    GLOBALLY ASSEMBLED MATRIX . . . . . . . . . . .SYMMETRIC  
 
- *** WARNING ***                         CP =       0.953   TIME= 22:11:30
- Material number 2 (used by element 129) should normally have at least   
+ *** WARNING ***                         CP =       0.781   TIME= 22:53:41
+ Material number 2 (used by element 19) should normally have at least    
  one MP or one TB type command associated with it.  Output of energy by  
  material may not be available.                                          
 
- *** NOTE ***                            CP =       0.953   TIME= 22:11:30
+ *** NOTE ***                            CP =       0.781   TIME= 22:53:41
  The step data was checked and warning messages were found.              
   Please review output or errors file ( E:\vu.t.linh204.work GD\Lop Anh  
  Tuan\EdX Courses\ENGR2000X\20P01 -                                      
- 2D_Conduction\_ProjectScratch\Scr224B\file0.err ) for these warning     
+ 2D_Conduction\_ProjectScratch\Scr4C4C\file0.err ) for these warning     
  messages.                                                               
 
- *** NOTE ***                            CP =       0.953   TIME= 22:11:30
+ *** NOTE ***                            CP =       0.781   TIME= 22:53:41
  The conditions for direct assembly have been met.  No .emat or .erot    
  files will be produced.                                                 
 
@@ -319,8 +319,8 @@
   
      D I S T R I B U T E D   D O M A I N   D E C O M P O S E R
   
-  ...Number of elements: 144
-  ...Number of nodes:    433
+  ...Number of elements: 24
+  ...Number of nodes:    73
   ...Decompose to 2 CPU domains
   ...Element load balance ratio =     1.000
 
@@ -351,50 +351,50 @@
 
 
  Range of element maximum matrix coefficients in global coordinates
- Maximum = 2.31111111 at element 126.                                    
- Minimum = 0.333333333 at element 144.                                   
+ Maximum = 2.31111112 at element 12.                                     
+ Minimum = 0.888888888 at element 22.                                    
 
    *** ELEMENT MATRIX FORMULATION TIMES
      TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
 
-        1       128  PLANE77       0.000   0.000000
-        2        16  SURF151       0.000   0.000000
- Time at end of element matrix formulation CP = 1.015625.                
+        1        18  PLANE77       0.000   0.000000
+        2         6  SURF151       0.000   0.000000
+ Time at end of element matrix formulation CP = 0.828125.                
 
  DISTRIBUTED SPARSE MATRIX DIRECT SOLVER.
-  Number of equations =         416,    Maximum wavefront =     20
+  Number of equations =          66,    Maximum wavefront =     18
 
-  Local memory allocated for solver              =      0.313 MB
-  Local memory required for in-core solution     =      0.277 MB
-  Local memory required for out-of-core solution =      0.277 MB
+  Local memory allocated for solver              =      0.213 MB
+  Local memory required for in-core solution     =      0.185 MB
+  Local memory required for out-of-core solution =      0.185 MB
 
-  Total memory allocated for solver              =      0.613 MB
-  Total memory required for in-core solution     =      0.541 MB
-  Total memory required for out-of-core solution =      0.541 MB
+  Total memory allocated for solver              =      0.422 MB
+  Total memory required for in-core solution     =      0.367 MB
+  Total memory required for out-of-core solution =      0.367 MB
 
- *** NOTE ***                            CP =       1.062   TIME= 22:11:31
+ *** NOTE ***                            CP =       0.969   TIME= 22:53:42
  The Distributed Sparse Matrix Solver is currently running in the        
  in-core memory mode.  This memory mode uses the most amount of memory   
  in order to avoid using the hard drive as much as possible, which most  
  often results in the fastest solution time.  This mode is recommended   
  if enough physical memory is present to accommodate all of the solver   
  data.                                                                   
- Distributed sparse solver maximum pivot= 4.62222222 at node 320 TEMP.   
- Distributed sparse solver minimum pivot= 0.88546748 at node 12 TEMP.    
- Distributed sparse solver minimum pivot in absolute value= 0.88546748   
- at node 12 TEMP.                                                        
+ Distributed sparse solver maximum pivot= 4.58271605 at node 58 TEMP.    
+ Distributed sparse solver minimum pivot= 1.15555556 at node 2 TEMP.     
+ Distributed sparse solver minimum pivot in absolute value= 1.15555556   
+ at node 2 TEMP.                                                         
 
    *** ELEMENT RESULT CALCULATION TIMES
      TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
 
-        1       128  PLANE77       0.000   0.000000
-        2        16  SURF151       0.000   0.000000
+        1        18  PLANE77       0.000   0.000000
+        2         6  SURF151       0.000   0.000000
 
    *** NODAL LOAD CALCULATION TIMES
      TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
 
-        1       128  PLANE77       0.000   0.000000
-        2        16  SURF151       0.000   0.000000
+        1        18  PLANE77       0.000   0.000000
+        2         6  SURF151       0.000   0.000000
  *** LOAD STEP     1   SUBSTEP     1  COMPLETED.    CUM ITER =      1
  *** TIME =   1.00000         TIME INC =   1.00000      NEW TRIANG MATRIX
 
@@ -409,19 +409,19 @@
  ****************************************************
  *************** FINISHED SOLVE FOR LS 1 *************
 
- *GET  _WALLASOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  22.1919444    
+ *GET  _WALLASOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  22.8950000    
 
  FINISH SOLUTION PROCESSING
 
 
- ***** ROUTINE COMPLETED *****  CP =         1.172
+ ***** ROUTINE COMPLETED *****  CP =         1.266
 
 
 
  *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2019 R3          19.5     ***
  DISTRIBUTED ANSYS Academic Teaching Introductory              
 
- 01055371  VERSION=WINDOWS x64   22:11:31  FEB 01, 2020 CP=      1.188
+ 01055371  VERSION=WINDOWS x64   22:53:42  FEB 01, 2020 CP=      1.266
 
  2D_conduction--Steady-State Thermal (B5)                                      
 
@@ -429,7 +429,7 @@
 
           ***** ANSYS RESULTS INTERPRETATION (POST1) *****
 
- *** NOTE ***                            CP =       1.188   TIME= 22:11:31
+ *** NOTE ***                            CP =       1.266   TIME= 22:53:42
  Reading results into the database (SET command) will update the current 
  displacement and force boundary conditions in the database with the     
  values from the results file for that load set.  Note that any          
@@ -447,13 +447,13 @@
  EXIT THE ANSYS POST1 DATABASE PROCESSOR
 
 
- ***** ROUTINE COMPLETED *****  CP =         1.203
+ ***** ROUTINE COMPLETED *****  CP =         1.266
 
 
 
  PRINTOUT RESUMED BY /GOP
 
- *GET  _WALLDONE  FROM  ACTI  ITEM=TIME WALL  VALUE=  22.1919444    
+ *GET  _WALLDONE  FROM  ACTI  ITEM=TIME WALL  VALUE=  22.8950000    
 
  PARAMETER _PREPTIME =     0.000000000    
 
@@ -465,11 +465,11 @@
 
  *GET  _DLBRATIO  FROM  ACTI  ITEM=SOLU DLBR  VALUE=  1.00000000    
 
- *GET  _COMBTIME  FROM  ACTI  ITEM=SOLU COMB  VALUE= 0.600061000E-01
- --- Number of total nodes = 433
- --- Number of total elements = 144
+ *GET  _COMBTIME  FROM  ACTI  ITEM=SOLU COMB  VALUE= 0.114122700    
+ --- Number of total nodes = 73
+ --- Number of total elements = 24
  --- Element load balance ratio = 1
- --- Time to combine distributed files = 6.00061E-02
+ --- Time to combine distributed files = 0.1141227
 
  EXIT ANSYS WITHOUT SAVING DATABASE
 
@@ -480,7 +480,7 @@
 +--------- D I S T R I B U T E D   A N S Y S   S T A T I S T I C S ------------+
 
 Release: 2019 R3            Build: 19.5       Update: UP20190805   Platform: WINDOWS x64 
-Date Run: 02/01/2020   Time: 22:11     Process ID: 12620
+Date Run: 02/01/2020   Time: 22:53     Process ID: 12616
 Operating System: Windows 10  (Build: 18363)
 
 Processor Model: Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz
@@ -506,18 +506,18 @@ Input File: dummy.dat
 
   Core                Machine Name   Working Directory
  -----------------------------------------------------
-     0                Yamashita-PC   E:\vu.t.linh204.work GD\Lop Anh Tuan\EdX Courses\ENGR2000X\20P01 - 2D_Conduction\_ProjectScratch\Scr224B
-     1                Yamashita-PC   E:\vu.t.linh204.work GD\Lop Anh Tuan\EdX Courses\ENGR2000X\20P01 - 2D_Conduction\_ProjectScratch\Scr224B
+     0                Yamashita-PC   E:\vu.t.linh204.work GD\Lop Anh Tuan\EdX Courses\ENGR2000X\20P01 - 2D_Conduction\_ProjectScratch\Scr4C4C
+     1                Yamashita-PC   E:\vu.t.linh204.work GD\Lop Anh Tuan\EdX Courses\ENGR2000X\20P01 - 2D_Conduction\_ProjectScratch\Scr4C4C
  
-Latency time from master to core     1 =   21.686 microseconds
+Latency time from master to core     1 =    1.960 microseconds
  
-Communication speed from master to core     1 =   673.98 MB/sec
+Communication speed from master to core     1 =   856.07 MB/sec
 
-Total CPU time for main thread                    :        1.3 seconds
-Total CPU time summed for all threads             :        1.4 seconds
+Total CPU time for main thread                    :        1.2 seconds
+Total CPU time summed for all threads             :        1.5 seconds
 
 Elapsed time spent pre-processing model (/PREP7)  :        0.1 seconds
-Elapsed time spent solution - preprocessing       :        0.2 seconds
+Elapsed time spent solution - preprocessing       :        0.1 seconds
 Elapsed time spent computing solution             :        0.5 seconds
 Elapsed time spent solution - postprocessing      :        0.1 seconds
 Elapsed time spent post-processing model (/POST1) :        0.0 seconds
@@ -550,7 +550,7 @@ Total amount of I/O read from disk                :        0.0 GB
  |                                                                           |
  |---------------------------------------------------------------------------|
  |                                                                           |
- |        CP Time      (sec) =          1.375       Time  =  22:11:32        |
- |        Elapsed Time (sec) =          5.000       Date  =  02/01/2020      |
+ |        CP Time      (sec) =          1.453       Time  =  22:53:43        |
+ |        Elapsed Time (sec) =          4.000       Date  =  02/01/2020      |
  |                                                                           |
  *---------------------------------------------------------------------------*

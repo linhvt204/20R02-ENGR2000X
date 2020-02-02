@@ -1,1 +1,7 @@
-
+build/
+fortran/*.mk
+mixtures/*.MIX
+fluids/*.FLD
+fluids/*.PPF
+fluids/HMX.BNC
+fortran/MANUAL.TXT

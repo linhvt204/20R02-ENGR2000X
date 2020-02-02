@@ -1,5 +1,5 @@
 build/
-fortran/*.mk
+fortran/*.dsp
 mixtures/*.MIX
 fluids/*.FLD
 fluids/*.PPF

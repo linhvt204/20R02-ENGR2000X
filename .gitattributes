@@ -1,4 +1,4 @@
 # Auto detect text files and perform LF normalization
 *.DSP linguist-detectable=true
-*.DSP linguist-generated=true
 *.DSP linguist-language=Fortran
+*.DSP linguist-detectable=true
